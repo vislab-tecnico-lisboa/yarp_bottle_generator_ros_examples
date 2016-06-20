@@ -3,8 +3,8 @@ import rospy
 from yarp_bottle_generator_ros_examples.msg import MotorsInertial
 
 def callback(data):
-    rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-    
+    rospy.loginfo(rospy.get_caller_id() + " I heard inertial data %s", data.inertial)
+    rospy.loginfo(rospy.get_caller_id() + " I heard encoders data %s", data.encoders)
 def listener():
 
     # In ROS, nodes are uniquely named. If two nodes with the same
@@ -14,7 +14,7 @@ def listener():
     # run simultaneously.
     rospy.init_node('motors_inertial_listener', anonymous=True)
 
-    rospy.Subscriber("motors_inertial_port", String, callback)
+    rospy.Subscriber("/motors_inertial_port", MotorsInertial, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
