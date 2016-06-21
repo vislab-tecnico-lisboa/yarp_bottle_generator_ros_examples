@@ -2,26 +2,30 @@
 
 This is ROS package that contains the message files (.msg) and the python 
 scripts that complement the tutorial examples of 
-(yarp-bottle-generator)[https://github.com/vislab-tecnico-lisboa/yarp-bottle-generator]: 
+[yarp-bottle-generator](https://github.com/vislab-tecnico-lisboa/yarp-bottle-generator): 
 * [tutorial_example_ros_yarp.ini](https://github.com/vislab-tecnico-lisboa/yarp-bottle-generator/blob/master/app/tutorial_example_ros_yarp.ini)
 * [tutorial_exampla_yarp_ros.ini](https://github.com/vislab-tecnico-lisboa/yarp-bottle-generator/blob/master/app/tutorial_example_yarp_ros.ini)
 
 ## Requirements
 * Compile YARP with ROS support, YARP examples, and additional devices. For YARP-ROS support, select the 
 [flags](http://www.yarp.it/yarp_with_ros_configure.html)
+
 	CREATE_GUIS
 	CREATE_LIB_MATH
 	CREATE_OPTIONAL_CARRIERS
 	CREATE_DEVICE_LIBRARY_MODULES
+
 Select the following devices
+
 	ENABLE_yarpcar_tcpros_carrier
 	ENABLE_yarpcar_rossrv_carrier
 	ENABLE_yarpcar_xmlrpc_carrier
 	ENABLE_yarpmod_fakeIMU
 	ENABLE_yarpmod_fakeMotorControl
-* Compile YARP fakebot tutorial, located in the <yarp-repository>/example/tutorial/fakebot, usign the following .ini file
-	device group
 
+* Compile YARP fakebot tutorial, located in the <yarp-repository>/example/tutorial/fakebot, usign the following .ini file
+
+	device group
 	[part robot]
 	device fakebot
 	background back.ppm
