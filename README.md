@@ -7,7 +7,8 @@ scripts that complement the tutorial examples of
 * [tutorial_exampla_yarp_ros.ini](https://github.com/vislab-tecnico-lisboa/yarp-bottle-generator/blob/master/app/tutorial_example_yarp_ros.ini)
 
 ## Requirements
-* Compile YARP with ROS support, YARP examples, and additional devices. For YARP-ROS support, select the [flags](http://www.yarp.it/yarp_with_ros_configure.html)
+Compile YARP with ROS support, YARP examples, and additional devices.
+For YARP-ROS support, select the [flags](http://www.yarp.it/yarp_with_ros_configure.html)
 
     CREATE_GUIS
     CREATE_LIB_MATH
@@ -22,7 +23,7 @@ Select the following devices
 	ENABLE_yarpmod_fakeIMU
 	ENABLE_yarpmod_fakeMotorControl
 
-* Compile YARP fakebot tutorial, located in the <yarp-repository>/example/tutorial/fakebot, usign the following .ini file
+Compile YARP fakebot tutorial, located in the <yarp-repository>/example/tutorial/fakebot, usign the following .ini file
 
 	device group
 	[part robot]
