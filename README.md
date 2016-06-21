@@ -9,10 +9,10 @@ scripts that complement the tutorial examples of
 ## Requirements
 * Compile YARP with ROS support, YARP examples, and additional devices. For YARP-ROS support, select the [flags](http://www.yarp.it/yarp_with_ros_configure.html)
 
-	CREATE_GUIS
-	CREATE_LIB_MATH
-	CREATE_OPTIONAL_CARRIERS
-	CREATE_DEVICE_LIBRARY_MODULES
+    CREATE_GUIS
+    CREATE_LIB_MATH
+    CREATE_OPTIONAL_CARRIERS
+    CREATE_DEVICE_LIBRARY_MODULES
 
 Select the following devices
 
