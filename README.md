@@ -7,6 +7,7 @@ scripts that complement the tutorial examples of
 * [tutorial_exampla_yarp_ros.ini](https://github.com/vislab-tecnico-lisboa/yarp-bottle-generator/blob/master/app/tutorial_example_yarp_ros.ini)
 
 ## Requirements
+ROS installed
 Compile YARP with ROS support, YARP examples, and additional devices.
 For YARP-ROS support, select the [flags](http://www.yarp.it/yarp_with_ros_configure.html)
 
@@ -54,6 +55,7 @@ Execute the following command sequence (better if you open a terminal for each c
 
 	roscore
 	yarpserver --ros
+	yarpidl_rosmsg --name /typ@/yarpidl
 	yarpdev --device fakeIMU
 	yarpdev --device test_motor --allow-deprecated-devices --name /dummy_head --axes 5
 	rosrun yarp_bottle_generator_ros_examples motor_inertial_reader.py
@@ -71,6 +73,7 @@ Execute the following command sequence (better if you open a terminal for each c
 
 	roscore
 	yarpserver --ros
+	yarpidl_rosmsg --name /typ@/yarpidl
 	<path-to-fakebot-executable>/run_fakebot --from <path-to-fakebot>/<my-fakebot>.ini
 	rosrun yarp_bottle_generator_ros_examples fakebot_motor_control.py
 
