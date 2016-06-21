@@ -8,6 +8,7 @@ scripts that complement the tutorial examples of
 
 ## Requirements
 ROS installed
+
 Compile YARP with ROS support, YARP examples, and additional devices.
 For YARP-ROS support, select the [flags](http://www.yarp.it/yarp_with_ros_configure.html)
 
